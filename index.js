@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer')
 
 // Установка токена бота
 const token = process.env.TOKEN;
-const bot = new TelegramBot('6210059305:AAFqbdBVQG4UzC2RVxNGIy45qvQDmbiy4ts', {polling: true});
+const bot = new TelegramBot(token, {polling: true});
 
 // Обработка команды /start
 bot.onText(/\/start/, (msg) => {
